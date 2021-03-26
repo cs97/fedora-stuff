@@ -9,14 +9,12 @@
 
 ### CoreCtrl
 ```
-sudo nano /etc/default/grub 
+sudo nano /boot/loader/entries/xxxxxxxxxxxxx-5.11.9-200.fc33.x86_64.conf
 ```
 ```
-RUB_CMDLINE_LINUX_DEFAULT="<other_params>... amdgpu.ppfeaturemask=0xffffffff"
+options root=UUID=xxxx ro rootflags=subvol=root rhgb quiet amdgpu.ppfeaturemask=0xffffffff
 ```
-```
-sudo grub2-mkconfig -o /boot/grub2/grub.cfg
-```
+
 
 
 ### Discord
