@@ -22,6 +22,14 @@ options root=UUID=xxxx ro rootflags=subvol=root rhgb quiet amdgpu.ppfeaturemask=
 sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 ```
 
+### NTFS FIX
+```
+sudo ntfsfix /dev/sdX
+```
+```
+sudo mount -t ntfs-3g /dev/sdX /...
+```
+
 ### Discord
 ```
 sudo dnf install snapd
