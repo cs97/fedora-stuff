@@ -64,6 +64,19 @@ dnf install binutils gcc make patch libgomp glibc-headers glibc-devel kernel-hea
 dnf install ~/rpmrebuild/RPMS/x86_64/VirtualBox-6.1-6.1.18_142142_fedora33-1.x86_64.rpm
 ```
 
+### VBOX repo
+```
+wget https://download.virtualbox.org/virtualbox/rpm/fedora/virtualbox.repo
+```
+```
+sudo mv virtualbox.repo /etc/yum.repos.d/virtualbox.repo
+```
+```
+sudo dnf update
+```
+```
+sudo dnf install VirtualBox-6.1
+```
 
 
 
