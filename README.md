@@ -45,7 +45,13 @@ snap run discord
 ```
 sudo dnf install VirtualBox
 ```
-
+### Screenrecorder
+```
+*rpmfusion free
+```
+```
+sudo dnf install simplescreenrecorder
+```
 
 
 
